@@ -23,6 +23,9 @@
 - (id)SquereTriangl
 {
     Triangle *Squere = [[Triangle alloc] init];
-    Squere = ((pointB.dy - pointA.dy)*(pointC.dx - pointA.dx) - (pointBx - pointA.dx)*(pointC.dy - pointA.dy))/2;
+    
+    //Squere = ((pointB.dy - pointA.dy)*(pointC.dx - pointA.dx) - (pointBx - pointA.dx)*(pointC.dy - pointA.dy))/2;
+    //чому в методы де знаходжу площу не видно pointB.dy...
 }
+
 @end
