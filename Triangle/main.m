@@ -7,11 +7,24 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "Triangle.h"
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        NSLog(@"Hello, World!");
+       // NSLog(@"Hello, World!");
+        Triangle *pointA = [[Triangle alloc] init];
+        pointA.dx = 1.0f;
+        pointA.dy = 1.0f;
+        
+        Triangle *pointB = [[Triangle alloc] init];
+        
+        pointB.dx = 3.0f;
+        pointB.dy = 4.0f;
+        
+        Triangle *pointC = [[Triangle alloc] init];
+        pointC.dx = 1.0f;
+        pointC.dy = 1.0f;
     }
+
     return 0;
 }
