@@ -18,4 +18,5 @@
 
 - (instancetype)initWithCoordinates:(CGPoint)pointA pointB:(CGPoint)pointB pointC:(CGPoint)pointC;
 - (int)SquereTriangle;
+- (BOOL)checkPoint:(CGPoint)point;
 @end

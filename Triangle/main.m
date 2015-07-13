@@ -27,11 +27,21 @@ int main(int argc, const char * argv[]) {
         CGPoint pointA = CGPointMake(1.0, 1.0);
         CGPoint pointB = CGPointMake(3.0, 4.0);
         CGPoint pointC = CGPointMake(5.0, 1.0);
-        CGPoint pointX = CGPointMake(x,y);
-//        Triangle *BigTriangle = [[Triangle alloc] initWithCoordinates:pointA pointB:pointB pointC:pointC];
+        Triangle *bigTriangle = [[Triangle alloc] initWithCoordinates:pointA pointB:pointB pointC:pointC];
+        float xCoordinate;
+        NSLog(@"Type the X coordinate of the point:");
+        scanf("%f", xCoordinate);
+        float yCoordinate;
+        NSLog(@"Type the Y coordinate of the point:");
+        scanf("%f", yCoordinate);
         
-        
-        
+        CGPoint pointX = CGPointMake(xCoordinate, yCoordinate);
+        BOOL isPointInTriangle = [bigTriangle checkPoint:pointX];
+        if (isPointInTriangle) {
+            NSLog(@"Point is a part of given triangel");
+        } else {
+            NSLog(@"Sorry, you point is out of this Triangel");
+        }
         
     }
 

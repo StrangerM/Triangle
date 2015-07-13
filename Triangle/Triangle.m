@@ -22,17 +22,16 @@
     return self;
 }
 
-- (int)SquereTriangl
+- (NSInteger)SquereTriangl
 {
-    
-    
-    int sqr;
-    sqr = (3 - 1) * (5 - 1) - (3 - 1) * (1 - 1);
+    NSInteger sqr = (self.pointB.y - self.pointA.y) * (self.pointC.x - self.pointA.x) - (self.pointB.x - self.pointA.x) * (self.pointC.y - self.pointA.y);    
     return sqr;
     
     }
-- (int)checkpoint
+- (BOOL)checkPoint:(CGPoint)point
 {
+    BOOL pointIsInTriangel;
+    
 //    x1=1 y1=1
 //    x2 =3 y2=4
 //    x3=5 y3=1
@@ -46,6 +45,6 @@
 //        else NSLOG(@"point out")
     
     
-    return <#expression#>
+    return pointIsInTriangel;
 }
 @end
