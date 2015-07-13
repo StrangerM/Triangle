@@ -27,7 +27,9 @@ int main(int argc, const char * argv[]) {
         CGPoint pointA = CGPointMake(1.0, 1.0);
         CGPoint pointB = CGPointMake(3.0, 4.0);
         CGPoint pointC = CGPointMake(5.0, 1.0);
-        Triangle *BigTriangle = [[Triangle alloc] initWithCoordinates:pointA pointB:pointB pointC:pointC];
+        CGPoint pointX = CGPointMake(x,y);
+//        Triangle *BigTriangle = [[Triangle alloc] initWithCoordinates:pointA pointB:pointB pointC:pointC];
+        
         
         
         

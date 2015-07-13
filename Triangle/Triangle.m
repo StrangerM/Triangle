@@ -10,22 +10,33 @@
 
 @implementation Triangle
 
-- (instancetype)initWithCoordinates:(CGPoint)point
+- (instancetype)initWithCoordinates:(CGPoint)pointA pointB:(CGPoint)pointB pointC:(CGPoint)pointC pointX:(CGPoint)pointX;
 {
     self = [super init];
     if (self) {
-        self.dx = point.x;
-        self.dy = point.y;
+        self.pointA = pointA;
+        self.pointB = pointB;
+        self.pointC = pointC;
+        self.pointX = pointX;
       }
     return self;
 }
 
-//- (id)SquereTriangl
-//{
-//    Triangle *Squere = [[Triangle alloc] init];
-//    
-//    //Squere = ((pointB.dy - pointA.dy)*(pointC.dx - pointA.dx) - (pointBx - pointA.dx)*(pointC.dy - pointA.dy))/2;
-//    //чому в методы де знаходжу площу не видно pointB.dy...
-//}
+- (int)SquereTriangl
+{
+    
+    
+    int sqr;
+    sqr = ((3 - 1) * (5 - 1) - (3 - 1) * (1 - 1))/2;
+    return sqr;
+    
+    }
+- (int)checkpoint
+{
 
+    
+    
+    
+    return <#expression#>
+}
 @end

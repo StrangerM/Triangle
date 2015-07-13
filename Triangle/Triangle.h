@@ -10,9 +10,12 @@
 
 @interface Triangle : NSObject
 
-@property (nonatomic) CGFloat dx;
-@property (nonatomic) CGFloat dy;
 
-- (instancetype)initWithCoordinates:(CGPoint)point;
-- (id)SquereTriangle;
+@property (nonatomic) CGPoint pointA;
+@property (nonatomic) CGPoint pointB;
+@property (nonatomic) CGPoint pointC;
+@property (nonatomic) CGPoint pointX;
+
+- (instancetype)initWithCoordinates:(CGPoint)pointA pointB:(CGPoint)pointB pointC:(CGPoint)pointC;
+- (int)SquereTriangle;
 @end
