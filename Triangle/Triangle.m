@@ -10,14 +10,14 @@
 
 @implementation Triangle
 
-- (instancetype)initWithCoordinates:(CGPoint)pointA pointB:(CGPoint)pointB pointC:(CGPoint)pointC pointX:(CGPoint)pointX;
+- (instancetype)initWithCoordinates:(CGPoint)pointA pointB:(CGPoint)pointB pointC:(CGPoint)pointC pointX:(CGPoint);
 {
     self = [super init];
     if (self) {
         self.pointA = pointA;
         self.pointB = pointB;
         self.pointC = pointC;
-        self.pointX = pointX;
+        
       }
     return self;
 }
